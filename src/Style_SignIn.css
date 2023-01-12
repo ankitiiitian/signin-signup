@@ -1,0 +1,270 @@
+div.sign-in-component {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    max-height: 821px;
+    max-width: 1000px;
+    margin: 2.5rem 15rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px 0px #00000033;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    div.sign-in-component {
+      margin: 2.5rem 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  div.sign-in-component .left,
+  div.sign-in-component .right {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.sign-in-component .left {
+    overflow: hidden;
+    max-width: 500px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    div.sign-in-component .left {
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  div.sign-in-component .left img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  div.sign-in-component .right {
+    flex: 1;
+    padding: 0rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  div.sign-in-component .right p.join-signin {
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    font-family: sans-serif, Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+  
+  .right .password-wrapper {
+    position: relative;
+  }
+  
+  .right .password-wrapper .show-hide-pass {
+    position: absolute;
+    right: 1rem;
+    margin-top: 1rem;
+    top: 0.5rem;
+  }
+  
+  .right .password-wrapper .show-hide-pass svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .right .forgot-password {
+    font-family: sans-serif, Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 1rem 0;
+  }
+  
+  .right .forgot-password a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .right div.sign-in {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .right .sign-in button {
+    font-family: sans-serif, Roboto;
+    width: 450px;
+    height: 56px;
+    left: 1087px;
+    top: 675px;
+    background: #1575A7;
+    border-radius: 8px;
+    /* font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+    background: #1c4774;
+  
+    height: 4rem;
+    width: 9.5rem;
+    left: 962px;
+    top: 647px;
+    border-radius: 10px;
+    padding: 1rem 1.5rem; */
+  }
+  
+  .right .signup div.google,
+  .right .signup div.email-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px 0px #00000033;
+  
+    min-height: 50px;
+    max-width: 60vmax;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  
+  .right .signup div.google .icon,
+  .right .signup div.email-phone .icon {
+    margin: auto 1rem;
+  }
+  
+  .right .signup div.google .h5.h5,
+  .right .signup div.email-phone .h5.h5 {
+    font-family: sans-serif, Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+    font-size: 1.25rem;
+    height: 50px;
+    margin: 0 1rem 0 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    div.sign-in-component .right p.join-naest {
+      font-size: 1.25rem;
+    }
+  
+    .right .password-wrapper .show-hide-pass {
+      top: 0.5rem;
+    }
+  
+    .right .forgot-password {
+      font-size: 1rem;
+    }
+  
+    .right .sign-in button {
+      height: 2.6rem;
+      width: 5rem;
+      padding: 0.3rem 0.5rem 0.5rem;
+      font-size: 1rem;
+    }
+    .right .signup div.google .h5.h5,
+    .right .signup div.email-phone .h5.h5 {
+      font-size: 1rem;
+    }
+  }
+
+  .emailspace{
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 5px;
+    font-family: "PT Mono, monospace";
+    font-weight: 300;
+    opacity: 0.45;
+  }
+
+  .inputbox{
+    position: relative;
+    width: 98%;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-family: "Cutive Mono, monospace";
+    font-size: 14px;
+    padding: 2px 2px 2px 10px;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.295);
+    border-color: #1c4774;
+  }
+  .password-forget{
+    flex-direction: row;
+    margin-right: 2vmax;
+  }
+
+  .password-reset{
+    flex-direction: row-reverse;
+  }
+  .contain-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .line_16{
+    position: relative;
+    display: flex;
+    top: 17px;
+
+  }
+  .line_17{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 10rem;
+    height: 0px;
+    left: 0px;
+    top: 20px;
+    margin: 3px 3px 3px 3px;
+    border: 1px solid #000000;
+  }
+  .line_18{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    height: 0px;
+    left: 0rem;
+    top: 20px;
+    margin: 3px 3px 3px 3px;
+    border: 1px solid #000000;
+  }
+  .contain-row1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 10px 20px;
+    padding: 20px;
+  }
+  .Create-acc1{
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    margin: 20px 0px 20px 0px ;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  .Create-acc{
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    margin: 20px 0px 20px 0px ;
+    font-weight: 500;
+    color: rgb(255, 115, 0);
+  }
